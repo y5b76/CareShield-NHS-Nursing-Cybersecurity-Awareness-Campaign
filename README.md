@@ -182,4 +182,4 @@ Student Member, CIISec
 
 ---
 
-*This project was developed as part of the Usable Cyber Security: Analytics and Management module (2025/26). The Royal Hospital is a fictional organisation used for educational purposes.*
+*This project was developed as part of a personal project portfolio. The Royal Hospital is a fictional organisation used for educational purposes.*
