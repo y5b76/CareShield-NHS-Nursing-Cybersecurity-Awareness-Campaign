@@ -158,11 +158,12 @@ Three convergent risk factors create a uniquely challenging security environment
 The completion screen includes a **Report Friction** button linking to a pre-filled IT request form:
 
 ```
-To:      it.friction@royalhospital.nhs.uk
-Subject: Security Control Usability Issue
-CC:      Datix near-miss reporting system
 
-[Pre-filled form with episode number and control type]
+The completion screen directs staff to three reporting channels:
+- it.friction@royalhospital.nhs.uk  (security control usability issues)
+- it.security@royalhospital.nhs.uk  (real phishing emails)
+- Datix (near-miss reporting, available on the RH intranet)
+
 ```
 
 This turns CareShield into a **two-way improvement tool**: staff report which controls are causing workarounds, and IT can use this data to prioritise UX improvements - directly addressing Koppel et al.'s (2015) finding that workarounds persist because staff have no channel to report the friction that creates them.
