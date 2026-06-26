@@ -157,9 +157,9 @@ Three convergent risk factors create a uniquely challenging security environment
 
 The completion screen includes a **Report Friction** email link that opens a pre-filled email draft in the user's mail client:
 ```
-**To:**      it.friction@royalhospital.nhs.uk
-**Subject:** Security Control Usability Issue
-**Body:**    Episode number:
+To:      it.friction@royalhospital.nhs.uk
+Subject: Security Control Usability Issue
+Body:    Episode number:
          Control type:
          What happened:
 ```
