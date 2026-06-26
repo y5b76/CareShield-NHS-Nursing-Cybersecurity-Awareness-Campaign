@@ -1,174 +1,224 @@
 # 🏥 CareShield: NHS Nursing Staff Cybersecurity Awareness Campaign
 
-![Python](https://img.shields.io/badge/Domain-Usable_Security-blue?style=for-the-badge)
-![ISO 27001](https://img.shields.io/badge/ISO%2FIEC_27001%3A2022-Annex_A.6.3-0052CC?style=for-the-badge)
-![NIST](https://img.shields.io/badge/NIST_SP_800--50_Rev.1-Tier_2_Training-009688?style=for-the-badge)
-![WCAG](https://img.shields.io/badge/WCAG_2.1-AA_Compliant-4CAF50?style=for-the-badge)
+![Twine](https://img.shields.io/badge/Twine_2.12.0-Harlowe_3.3.9-brightgreen?style=for-the-badge)
+![NHS](https://img.shields.io/badge/NHS-Branded-005EB8?style=for-the-badge)
+![WCAG](https://img.shields.io/badge/WCAG_2.1-AA_Compliant-0057A8?style=for-the-badge)
+![Framework](https://img.shields.io/badge/NIST_SP_800--50_Rev.1-Tier_2-red?style=for-the-badge)
+![GDPR](https://img.shields.io/badge/UK_GDPR-Compliant_Design-003087?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
 
 ---
 
 ## 📌 Project Overview
 
-CareShield is a **mobile-optimised, branching scenario e-learning campaign** designed specifically for nursing staff at a fictional Royal Hospital (RH). It addresses the structural gap between clinical workflow demands and security control design, which is the root cause of security workarounds in healthcare environments.
+**CareShield** is a mobile-optimised interactive cybersecurity awareness campaign built for nursing staff at a fictional Royal Hospital NHS Trust. It addresses a documented gap in clinical security training: the mismatch between generic annual e-learning and the specific operational pressures that drive insecure workarounds in nursing environments.
 
-- ✅ **User group analysis** grounded in usable security literature (Sasse, Koppel, Beautement)
-- ✅ **Four-episode branching scenario module** built in Twine/Harlowe, exportable as standalone HTML
-- ✅ **Root cause mapping** aligned to the NCSC/ENISA Cyber Security Culture Framework
-- ✅ **Measurable outcomes framework** following NIST SP 800-50 Rev. 1 programme lifecycle
-- ✅ **Report Friction pathway,** a two-way mechanism letting nurses log usability barriers to IT
-- ✅ **Critical reflection** covering trade-off decisions, design alternatives, and ethical considerations
+The project is grounded in Zimmermann et al.'s (2024) human-centred cybersecurity framework: nurses are not the weak link, but expert users working inside poorly aligned systems. CareShield targets both behaviour and the system design conditions that produce insecure workarounds.
 
-> 📄 **[Download the full project portfolio document →](./CareShield_Personal_Project_Toochukwu_Praise_Ajoku.pdf)**
+- ✅ **4-episode branching scenario** - active decision-making, not passive reading (builds self-efficacy)
+- ✅ **3-5 minutes per episode** - microlearning at shift-change, not annual block delivery
+- ✅ **Report Friction pathway** - two-way feedback: nurses log usability barriers to IT
+- ✅ **NHS branding** - #003087 blue, plain English, real EHR interfaces and phishing templates
+- ✅ **WCAG 2.1 AA compliant** - mobile-optimised, works on any device browser
+- ✅ **5 measurable outcomes** - phishing click rate, incident reporting, knowledge retention, SIEM alerts, culture survey
+
+> 📄 **[Download the full project portfolio document](./CareShield_Personal_Project_Ajoku.pdf)**
+>
+> 🎮 **[Launch the CareShield module](./Artefact.html)** - open in any browser, no install required
 
 ---
 
-## 🧠 Problem Statement
+## 🧠 Design Framework
 
-Nurses represent one of the highest-risk user groups in healthcare cybersecurity, not because of indifference, but because of **structural incompatibility** between clinical workflow and security control design. Three convergent risk factors drive this:
-
-1. **Breadth of system access** — multiple independent clinical systems requiring separate authentication
-2. **Operational time pressure** — session timeouts and MFA steps interrupt patient care
-3. **Compliance budget exhaustion** — repeated demands cause behavioural disengagement, not malice (Beautement et al., 2008)
-
-The WannaCry attack (2017), which disabled 80 NHS trusts — originated from poor access hygiene, not sophisticated exploitation. Generic annual e-learning does not meet ISO/IEC 27001:2022 Annex A.6.3 or NIST SP 800-50 Rev. 1 Tier 2 requirements for high-risk operational staff.
+```
+PROBLEM DIAGNOSIS
+Nurses: breadth of system access + time pressure + workflow-security conflict
+    |
+    v
+ROOT CAUSE ANALYSIS (NCSC/ENISA Cyber Security Culture Framework)
+    |-- Workflow-security conflict       -> Report Friction pathway
+    |-- Compliance budget exhaustion     -> 3-5 min microlearning at shift-change
+    |-- Security treated as secondary    -> Emergency override pathways
+    |-- Low personal relevance           -> RH characters, NHS phishing templates
+    |-- Low psychological safety         -> Non-punitive framing; reporting as duty
+    |
+    v
+INTERVENTION: CareShield (Twine/Harlowe branching scenario)
+    |
+    v
+MEASUREMENT (NIST SP 800-50 Rev. 1 Programme Lifecycle)
+    Baseline -> M3 -> M6 -> M12
+    Phishing click rate | Incident reports | Completion | SIEM alerts | Culture survey
+```
 
 ---
 
 ## 🗂️ Project Structure
 
 ```
-careshield-awareness-campaign/
-│
-├── README.md
-├── CareShield_Personal_Project_Toochukwu_Praise_Ajoku.pdf   ← Full portfolio document
-│
-└── screenshots/
-    ├── 01_careshield_start_screen.png
-    ├── 02_episode1_handover_decision.png
-    ├── 03_episode1_consequence_shared_credentials.png
-    ├── 04_episode1_correct_emergency_override.png
-    ├── 05_episode2_nhs_email_decision.png
-    └── 06_completion_screen_report_friction.png
+careshield-nhs-awareness-campaign/
+|
+|-- README.md
+|-- CareShield_Personal_Project_Ajoku.pdf    <- Full portfolio document
+|-- Artefact.html                            <- CareShield interactive module (open in browser)
+|
+|-- screenshots/
+    |-- 01_start_screen.png
+    |-- 02_episode1_decision_screen.png
+    |-- 03_episode1_wrong_choice_consequence.png
+    |-- 04_episode1_correct_pathway.png
+    |-- 05_episode2_phishing_decision.png
+    |-- 06_completion_screen.png
 ```
 
 ---
 
-## ⚙️ Framework & Standards Applied
+## ⚙️ Tech Stack
 
-| Standard / Framework | Application |
+| Component | Role |
 |---|---|
-| **ISO/IEC 27001:2022 Annex A.6.3** | Mandatory role-based awareness training |
-| **NIST SP 800-50 Rev. 1** | Tier 2 role-based training programme lifecycle |
-| **NIST SP 800-53 Rev. 5 (AT-2, AT-3)** | Frequency and role alignment for training controls |
-| **NCSC/ENISA Cyber Security Culture Framework** | Root cause mapping to campaign components |
-| **UK GDPR / DPA 2018** | Data minimisation, episode 3 scenario content |
-| **WCAG 2.1 AA** | Accessibility compliance for NHS module deployment |
+| **Twine 2.12.0** | Interactive story authoring tool |
+| **Harlowe 3.3.9** | Twine story format (branching logic engine) |
+| **HTML / CSS** | Single-file deployment - no server required |
+| **NHS Design System colours** | #003087 (NHS Blue), #005EB8 (NHS Bright Blue) |
+| **WCAG 2.1 AA** | Accessibility compliance standard |
+| **Netlify / GitHub Pages** | Deployment (standalone HTML file) |
 
 ---
 
-## 🎯 Part 1: User Group Analysis & Security Challenges
+## 🏥 Part 1 - User Group Analysis
 
-### Security Controls, Friction & Workarounds
+### Why Nursing Staff
+
+Three convergent risk factors create a uniquely challenging security environment:
+
+| Risk Factor | Evidence | Impact |
+|---|---|---|
+| Breadth of system access | Multiple EHR, medication, imaging, comms systems per ward | Each system requires independent authentication |
+| Operational time pressure | Patient care interruptions every 3-5 minutes on average | Re-authentication demands clash with clinical urgency |
+| Workflow-security conflict | Koppel et al. (2015) - nurses marked workstations to avoid re-auth | Compliance budget overload -> rational workarounds |
+
+> **Compliance Budget (Beautement, Sasse and Wonham, 2008):** repeated security demands cause behavioural disengagement through cognitive overload, not indifference. The nurse who shares a login is not being careless - they are rationally prioritising patient care within a system that has made secure access operationally incompatible with clinical workflow.
+
+### Security Control Friction Mapping
 
 | Security Control | Usability Friction | Workaround | Organisational Risk |
 |---|---|---|---|
 | Session timeout | Re-auth during emergencies | Shared login; persistent sessions | Non-repudiation failure; GDPR breach |
 | Password rotation | Multiple systems; frequent resets | Reuse; sticky notes | Credential compromise; lateral movement |
 | MFA | Extra step during urgent tasks | Shared OTPs; bypass requests | Control weakened |
-| RBAC | Access delays during transfers | Credential borrowing from colleagues | Access policy violation |
+| RBAC | Access delays during patient transfers | Credential borrowing from colleagues | Access policy violation |
 
-### Theoretical Basis
+### Regulatory Gap
 
-- **Beautement et al. (2008)** — Compliance budget: repeated demands cause fatigue, not wilful non-compliance
-- **Sasse & Flechais (2005)** — Security controls designed without operational context predictably produce workarounds
-- **Koppel et al. (2015)** — Nurses physically marked workstations to avoid re-authentication between interruptions
-- **Malik, Goel & Sinha (2026)** — Security self-efficacy is the strongest predictor of sustained compliance under fatigue
-
----
-
-## 🎮 Part 2: CareShield Module Design
-
-### Core Design Principle
-
-Nurses are not the weak link — they are expert users working inside poorly aligned systems. CareShield addresses **both individual behaviour and the system conditions** that produce insecure workarounds (Zimmermann et al., 2024).
-
-### Root Cause → Campaign Response Mapping
-
-| Root Cause | Theoretical Basis | Campaign Response |
-|---|---|---|
-| Workflow-security conflict | Koppel et al.; Sasse & Flechais | 'Report Friction' pathway |
-| Compliance budget exhaustion | Beautement et al. | 3–5 min microlearning at shift-change |
-| Security treated as secondary | Sasse & Flechais | Teaches safe shortcuts (e.g., emergency override) |
-| Low personal relevance | Nifakos et al. (2021) | RH characters, real EHR interfaces, NHS-specific phishing |
-| Low psychological safety | Zimmermann et al. (2024) | Module 4 reframes reporting as professional duty |
-
-### Module Structure: Four Episodes
-
-| Episode | Scenario | Root Cause | Security Concept |
+| Standard | Requirement | RH Current State | CareShield |
 |---|---|---|---|
-| 1: The Handover | Session timeout during emergency patient transfer | Structural incompatibility | Session management; emergency access protocol |
-| 2: The NHS Email | Fake NHS Digital email requesting urgent password verification | Time-pressure exploitation | Phishing recognition; reporting pathway |
-| 3: The WhatsApp Photo | Nurse photographs medication chart on personal phone | Compliance budget; BYOD | UK GDPR; data minimisation; secure channels |
-| 4: The Near Miss | Shared terminal left logged in; visitor gains access | Psychological safety | Incident reporting; shared accountability |
-
-### Why Branching Scenarios?
-
-The branching format was chosen over:
-- **Posters** — awareness-only, no behaviour change
-- **Phishing simulations** — diagnostic, not instructional (Malik et al., 2026)
-- **Facilitator-led sessions** — incompatible with rotating shift patterns
-
-Branching scenarios place learners in **active decision roles**, directly building security self-efficacy — the strongest predictor of sustained compliance under fatigue.
+| ISO/IEC 27001:2022 Annex A.6.3 | Training proportionate to role | Generic annual e-learning | Role-specific, scenario-based |
+| NIST SP 800-50 Rev. 1 | Tier 2 role-based training for high-risk staff | Tier 1 generic awareness | Tier 2 compliant |
+| NIST SP 800-53 Rev. 5 AT-2/AT-3 | Frequency and role alignment | Annual only | Shift-change microlearning |
 
 ---
 
-## 📊 Part 3: Measurement Framework
+## 🎮 Part 2 - The CareShield Artefact
 
-Consistent with the NIST SP 800-50 Rev. 1 programme lifecycle (Plan–Analyse–Design–Develop–Implement–Assess), CareShield defines five measurable outcomes over a six-month post-deployment window:
+### Why Branching Scenarios (Not Posters or Phishing Simulations)
+
+| Format | Limitation | Why CareShield is better suited |
+|---|---|---|
+| Posters / infographics | Awareness only - no decision building | Branching builds decision habit under pressure, not just knowledge |
+| Phishing simulations | Diagnostic, not instructional (Malik et al., 2026) | CareShield provides instructional feedback at each decision point |
+| Facilitator-led workshops | Incompatible with shift patterns | Async mobile delivery at shift change; no scheduling dependency |
+| Annual e-learning | Generic; Tier 1 not Tier 2 standard | Role-specific; NIST 800-50 Tier 2 compliant; frequency-appropriate |
+
+### Episode Structure
+
+| Episode | Scenario | Root Cause Addressed | Security Concept |
+|---|---|---|---|
+| 1: The Handover | Session timeout during emergency patient transfer | Structural incompatibility | Session management; non-repudiation; emergency access protocol |
+| 2: The NHS Email | Fake NHS Digital email requesting urgent password verification | Time-pressure exploitation | Phishing recognition; reporting pathway |
+| 3: The WhatsApp Photo | Nurse photographs medication chart on personal phone to share with GP | Compliance budget; BYOD | UK GDPR; data minimisation; approved secure channels |
+| 4: The Near Miss | Shared terminal left logged in; visitor gains access | Psychological safety | Incident reporting; shared accountability; CQC/ICO implications |
+
+### Screenshots
+
+| Fig 1 - Start Screen | Fig 2 - Episode 1 Decision Screen |
+|---|---|
+| ![Fig1](screenshots/01_start_screen.png) | ![Fig2](screenshots/02_episode1_decision_screen.png) |
+
+| Fig 3 - Wrong Choice Consequence | Fig 4 - Correct Pathway (Emergency Override) |
+|---|---|
+| ![Fig3](screenshots/03_episode1_wrong_choice_consequence.png) | ![Fig4](screenshots/04_episode1_correct_pathway.png) |
+
+| Fig 5 - Episode 2 Phishing Decision | Fig 6 - Completion Screen |
+|---|---|
+| ![Fig5](screenshots/05_episode2_phishing_decision.png) | ![Fig6](screenshots/06_completion_screen.png) |
+
+### Report Friction Mechanism
+
+The completion screen includes a **Report Friction** button linking to a pre-filled IT request form:
+
+```
+To:      it.friction@royalhospital.nhs.uk
+Subject: Security Control Usability Issue
+CC:      Datix near-miss reporting system
+
+[Pre-filled form with episode number and control type]
+```
+
+This turns CareShield into a **two-way improvement tool**: staff report which controls are causing workarounds, and IT can use this data to prioritise UX improvements - directly addressing Koppel et al.'s (2015) finding that workarounds persist because staff have no channel to report the friction that creates them.
+
+---
+
+## 📊 Part 3 - Measurable Outcomes
 
 | Metric | Method | Target | Horizon |
 |---|---|---|---|
-| Phishing click rate | Simulated NHS phishing campaign | ≤10% by M6 vs Week 0 baseline | Baseline → M3 → M6 |
-| Incident reporting rate | Helpdesk ticket categorisation | ≥30% increase from baseline | Monthly |
-| Module completion & retention | In-module quiz + M3 reassessment | ≥80% pass; ≤15% knowledge decay | Immediate + M3 |
-| Credential-sharing events | SIEM anomaly alerts | 50% reduction in shared-session events | Quarterly |
+| Phishing click rate | Simulated NHS phishing campaign | 10% or less by M6 vs Week 0 baseline | Baseline, M3, M6 |
+| Incident reporting rate | Helpdesk ticket categorisation | 30% or more increase from baseline | Monthly |
+| Module completion and retention | In-module quiz + M3 reassessment | 80% or more pass; 15% or less knowledge decay | Immediate + M3 |
+| Credential-sharing events | SIEM anomaly alerts (Splunk/Elastic) | 50% reduction in shared-session events | Quarterly |
 | Security culture perception | Anonymous ENISA survey | Shift from compliance-as-burden to compliance-as-normal | Annual |
 
 ---
 
-## ⚠️ Design Trade-offs & Limitations
+## ⚠️ Critical Reflection
 
-| Decision | Benefit | Limitation |
+### Key Trade-offs
+
+| Trade-off | Decision Made | Rationale |
 |---|---|---|
-| Micro-duration (3–5 min) | Reduces cognitive burden at shift-change | Limits depth; one workaround per episode |
-| RH-specific realism | High personal relevance and engagement | Reduces portability to other NHS trusts |
-| Report Friction pathway | Creates two-way organisational learning | Requires IT team responsiveness to sustain trust |
-| Non-punitive framing | Supports psychological safety and honest reporting | May understate compliance expectations |
+| Micro-duration (3-5 min) vs depth | Accepted micro-duration | Cognitive overload is the primary disengagement mechanism (Furnell and Thomson, 2009) |
+| RH-specific realism vs portability | Accepted specificity | Generic content is less effective because it lacks specific cues that make scenarios feel real (Nifakos et al., 2021) |
+| Report Friction vs IT responsiveness dependency | Included with SLA requirement | Without IT response SLA, mechanism damages trust rather than building it (Zimmermann et al., 2024) |
+
+### UK GDPR Considerations
+
+- **Module completion and quiz data:** processed under legitimate interests lawful basis; reported in aggregate only at ward level
+- **Report Friction submissions:** personal data (may name colleagues); routed to restricted IT inbox with RBAC; not used for performance management
+- **DPIA required** before production deployment (Tambe-Jagtap, 2023)
 
 ---
 
-## 🔒 Ethical & Governance Considerations
+## 🧠 Frameworks and References
 
-- **UK GDPR / DPA 2018** — Episode 3 explicitly addresses data minimisation and the prohibition on photographing patient records on personal devices
-- **ISO/IEC 27001:2022 Annex A.5.16** — Non-repudiation obligations form the feedback content for Episode 1's shared-login branch
-- **CQC / ICO implications** — Episode 4 demonstrates that near-miss reporting is a regulatory expectation, not optional
-- **WCAG 2.1 AA** — Module is screen-reader compatible, in plain NHS English, with non-punitive framing to protect psychological safety
-
----
-
-## 📚 Key References
-
-| Reference | Relevance |
+| Framework / Reference | Application |
 |---|---|
-| Beautement, Sasse & Wonham (2008) | Compliance budget — cognitive overload theory |
-| Sasse & Flechais (2005) | Usable security — security vs. workflow alignment |
-| Koppel et al. (2015) | Clinical workaround evidence |
-| Malik, Goel & Sinha (2026) | Security fatigue and self-efficacy |
-| Zimmermann et al. (2024) | Human-centred cybersecurity framework |
-| NIST SP 800-50 Rev. 1 (2024) | Training programme lifecycle |
-| ISO/IEC 27001:2022 | Annex A.6.3 awareness control |
-| ENISA Cybersecurity Culture Guidelines (2018) | Root cause framework |
+| **ISO/IEC 27001:2022 Annex A.6.3** | Role-proportionate training requirement |
+| **NIST SP 800-50 Rev. 1 (2024)** | Tier 2 role-based training standard; programme lifecycle |
+| **NIST SP 800-53 Rev. 5 AT-2/AT-3** | Frequency and role alignment mandates |
+| **NCSC/ENISA Cyber Security Culture (2018)** | Root cause framework for campaign design |
+| **WCAG 2.1 AA** | Accessibility compliance standard |
+| **UK GDPR / DPA 2018** | Data minimisation; DPIA; purpose limitation |
+| Beautement, Sasse and Wonham (2008) | Compliance Budget - cognitive overload mechanism |
+| Sasse and Flechais (2005) | Usable security - workarounds as rational responses |
+| Zimmermann et al. (2024) | Human-centred cybersecurity - nurses as partners not problems |
+| Koppel et al. (2015) | Clinical workaround evidence; Report Friction rationale |
+| Nifakos et al. (2021) | Personal relevance as engagement predictor in clinical training |
+| Malik et al. (2026) | Security self-efficacy as predictor of sustained compliance |
+| Furnell and Thomson (2009) | Security fatigue - cognitive overload and disengagement |
+| Karamahmutoglu and Gokturk (2024) | Usability-security measurement methodology |
+| Tambe-Jagtap (2023) | Human-centric cybersecurity governance and DPIA |
+| NAO (2018) | WannaCry - NHS access hygiene risk evidence |
 
 ---
 
@@ -182,4 +232,4 @@ Student Member, CIISec
 
 ---
 
-*This project was developed as part of a personal project portfolio. The Royal Hospital is a fictional organisation used for educational purposes.*
+*This project was designed for educational and portfolio purposes using a fictional NHS Trust scenario. No real patient data or NHS systems were accessed.*
