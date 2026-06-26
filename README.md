@@ -24,7 +24,7 @@ The project is grounded in Zimmermann et al.'s (2024) human-centred cybersecurit
 
 > 📄 **[Download the full project portfolio document](./CareShield_Personal_Project_Ajoku.pdf)**
 >
-> 🎮 **[Launch the CareShield module](https://y5b76.github.io/CareShield-NHS-Nursing-Cybersecurity-Awareness-Campaign/Artefact.html)** - open in any browser, no install required
+> 🎮 **[Launch the CareShield module](https://y5b76.github.io/CareShield-NHS-Nursing-Cybersecurity-Awareness-Campaign/Artefact.html)** - open in any browser, no installation required
 
 ---
 
