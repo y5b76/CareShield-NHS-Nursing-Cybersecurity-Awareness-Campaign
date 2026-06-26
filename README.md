@@ -155,11 +155,10 @@ Three convergent risk factors create a uniquely challenging security environment
 
 ### Report Friction Mechanism
 
-The completion screen includes a **Report Friction** button linking to a pre-filled IT request form:
+The completion screen directs staff to three reporting channels:
 
 ```
 
-The completion screen directs staff to three reporting channels:
 - it.friction@royalhospital.nhs.uk  (security control usability issues)
 - it.security@royalhospital.nhs.uk  (real phishing emails)
 - Datix (near-miss reporting, available on the RH intranet)
